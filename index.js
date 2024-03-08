@@ -22,7 +22,7 @@ app.use(offerRoutes);
 app.all("*", (req, res) => {
   res.status(404).json({ message: "This route does not exist" });
 });
-
+//console.log();
 app.listen(process.env.port, () => {
   console.log("Server started");
 });
